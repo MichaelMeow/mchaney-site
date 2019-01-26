@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Title, SubHeadline, SubTitles, Paragraphs, SubTitle, Paragraph, FlexColumn, ButtonOne } from './styles.js';
+import { Text, Title, SubHeadline, SubTitles, Paragraphs, SubTitle, Paragraph, FlexColumn, ButtonOneExternal } from './styles.js';
 
 const Div = styled.div`{
   background-color: whitesmoke;
@@ -12,7 +12,7 @@ const ButtonDiv = styled.div`{
 }`;
 
 
-function MedcertBlurb() {
+function Medcert() {
   return (
     <Div>
       <Text>
@@ -36,10 +36,10 @@ function MedcertBlurb() {
         </Paragraphs>
       </Text>
       <ButtonDiv>
-        <ButtonOne to="/medcert">Go To OSHA MedCert</ButtonOne>
+        <ButtonOneExternal href="http://www.oshamedcert.com/">Go To OSHA MedCert</ButtonOneExternal>
       </ButtonDiv>
     </Div>
   );
 }
 
-export default MedcertBlurb;
+export default Medcert;

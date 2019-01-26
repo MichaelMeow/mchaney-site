@@ -247,6 +247,10 @@ class Header extends React.Component {
               onClose={this.handleClose}
             >
               <MenuItem onClick={() => {
+                history.push('/');
+                this.handleClose();
+              }}>Home</MenuItem>
+              <MenuItem onClick={() => {
                 history.push('/whyus');
                 this.handleClose();
                }}>Why Us?</MenuItem>
