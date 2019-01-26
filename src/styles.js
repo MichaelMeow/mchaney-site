@@ -47,6 +47,21 @@ export const FlexColumn = styled.div`{
 }`;
 
 export const ButtonOne = styled(Link)`{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 100px;
+  height: 60px;
+  width: 220px;
+  background-color: #8da2a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 4px 4px 10px 1px black;
+}`;
+export const ButtonOneExternal = styled.a`{
+  text-decoration: none;
+  color: white;
   margin-bottom: 100px;
   height: 60px;
   width: 220px;
@@ -58,6 +73,8 @@ export const ButtonOne = styled(Link)`{
   box-shadow: 4px 4px 10px 1px black;
 }`;
 export const ButtonTwo = styled(Link)`{
+  text-decoration: none;
+  color: white;
   height: 60px;
   width: 220px;
   background-color: #063253;

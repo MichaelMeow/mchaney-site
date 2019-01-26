@@ -7,6 +7,7 @@ import WhyUs from './WhyUs';
 import Clients from './Clients';
 import Contact from './Contact';
 import CurVit from './CurVit';
+import Witness from './Witness';
 import './App.css';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path='/whyus' component={WhyUs}/>
           <Route exact path='/clients' component={Clients}/>
           <Route exact path='/cv' component={CurVit}/>
+          <Route exact path='/witness' component={Witness}/>
         </Switch>
         <Contact />
         <Footer />

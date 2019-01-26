@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Title, SubHeadline, SubTitles, Paragraphs, SubTitle, Paragraph, FlexColumn, ButtonOne } from './styles.js';
+import { Text, Title, SubHeadline, SubTitles, Paragraphs, SubTitle, Paragraph, FlexColumn, ButtonOneExternal } from './styles.js';
 
 const Div = styled.div`{
   background-color: whitesmoke;
@@ -36,7 +36,7 @@ function MedcertBlurb() {
         </Paragraphs>
       </Text>
       <ButtonDiv>
-        <ButtonOne to="/">Go To OSHA MedCert</ButtonOne>
+        <ButtonOneExternal href="http://www.oshamedcert.com/">Go To OSHA MedCert</ButtonOneExternal>
       </ButtonDiv>
     </Div>
   );
