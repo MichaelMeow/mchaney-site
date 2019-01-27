@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import mlogo from './assets/images/mlogo.png';
 
 const Div1 = styled.div`{
   width: 600px;
@@ -24,6 +25,9 @@ const Container = styled.div`{
   justify-content: center;
   align-items: center;
 }`
+const Img = styled.img`{
+  transform: scale(.4);
+}`
 
 
 function Footer() {
@@ -31,16 +35,8 @@ function Footer() {
     <Container>
       <Div1>
         <div>
-        Logo
+         <Img src={mlogo} />
         </div>
-        <div>
-        COMPANY NO. 111111
-        </div>
-        <div>
-        C 2019 | ALL RIGHTS RESERVE
-        </div>
-      </Div1>
-      <Div2>
         <div>
         PRIVACY
         </div>
@@ -48,8 +44,11 @@ function Footer() {
         TERMS
         </div>
         <div>
-        LOGO
+        © 2019 | ALL RIGHTS RESERVED
         </div>
+      </Div1>
+      <Div2>
+
       </Div2>
     </Container>
   );

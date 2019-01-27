@@ -2,9 +2,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Text = styled.div`{
-  padding: 100px;
+  padding: 100px 100px 60px 100px;
   margin-top: 0px;
-  padding-top: 80px;
 }`;
 export const Title = styled.h2`{
   font-family: 'Libre Baskerville', serif;
@@ -24,13 +23,12 @@ export const SubTitles = styled.div`{
   margin: 5vw;
   display: flex;
   justify-content: space-around;
-
 }`;
 export const Paragraphs = styled.div`{
   margin: 2vw;
   display: flex;
+  flex-basis: 0;
   justify-content: space-around;
-
 }`;
 export const SubTitle = styled.div`{
   font-style: italic;
@@ -73,6 +71,7 @@ export const ButtonOneExternal = styled.a`{
   box-shadow: 4px 4px 10px 1px black;
 }`;
 export const ButtonTwo = styled(Link)`{
+  margin-bottom: 100px;
   text-decoration: none;
   color: white;
   height: 60px;
