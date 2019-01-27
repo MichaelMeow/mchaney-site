@@ -84,3 +84,8 @@ export const ButtonTwo = styled(Link)`{
   border-radius: 2px;
   box-shadow: 4px 4px 10px 1px black;
 }`;
+
+export const Page = styled.div`{
+  min-width: 700px;
+  max-width: 70vw;
+}`;
