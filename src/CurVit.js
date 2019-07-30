@@ -235,7 +235,7 @@ function CurVit() {
             <li>ANSI Z117.1 Committee – Safety Requirements for Confined Spaces</li>
           </ul>
           <ButtonDiv >
-            <A href="/files/McHaneyCV.pdf" target="_blank" download>
+            <A href="/files/mchaneycv.pdf" target="_blank" download>
               Download PDF
             </A>
           </ButtonDiv>
