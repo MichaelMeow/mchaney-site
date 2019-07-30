@@ -28,7 +28,7 @@ function Contact() {
         <ContactSubTitles>
           <div>
             <Title2 style={{marginBottom:'5px', marginTop:'5px'}}>Email:</Title2>
-            <div>info@mchaneysafety.com</div>
+            <div>ronmchaney@gmail.com</div>
             <Title2 style={{marginBottom:'5px', marginTop:'10px'}}>Phone:</Title2>
             <div>509-315-8658 (Office)</div>
             <div>503-313-1879 (Mobile)</div>
