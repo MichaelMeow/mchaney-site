@@ -1,37 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Title, SubHeadline, SubTitles, Paragraphs, SubTitle, Paragraph, Title2 } from './styles.js';
+import { Title, Title2 } from './styles.js';
 
 const Div = styled.div`{
   background-color: #063253;
   color: white;
+  display: flex;
+  justify-content: center;
 }`;
-const FinePrint = styled.div`{
-  font-size: .6rem;
+const ContactCard = styled.div`{
+  padding: 140px 100px 100px 100px;
+  margin-top: 0px;
+  width: 440px;
+}`;
+export const ContactSubTitles = styled.div`{
+  margin: 25px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
 }`;
 
 function Contact() {
   return (
     <Div>
-      <Text>
+      <ContactCard>
         <Title>Contact</Title>
         <div>Interested in how McHaney & Associates can help your business?</div>
-        <SubTitles>
-          <div>
-            <Title2 style={{marginBottom:'5px', marginTop:'5px'}}>Mailing Address:</Title2>
-            <div>1234 ardsley run</div>
-            <div>spokey wash 33333</div>
-          </div>
+        <ContactSubTitles>
           <div>
             <Title2 style={{marginBottom:'5px', marginTop:'5px'}}>Email:</Title2>
-            <div>Ron@mchaney.com</div>
+            <div>info@mchaneysafety.com</div>
             <Title2 style={{marginBottom:'5px', marginTop:'10px'}}>Phone:</Title2>
-            <div>555-555-5555</div>
+            <div>509-315-8658 (Office)</div>
+            <div>503-313-1879 (Mobile)</div>
           </div>
-        </SubTitles>
-        <SubHeadline style={{marginBottom:'5px', marginTop:'5px'}}>Confidentiality Agreement</SubHeadline>
-        <FinePrint>McHaney & Associates, Inc., agrees not to release or otherwise divulge any information supplied herein, and that all information given shall be held confidential.</FinePrint>
-      </Text>
+          <div>
+            <Title2 style={{marginBottom:'5px', marginTop:'5px'}}>Mailing Address:</Title2>
+            <div>8924 E. Red Oak Dr.</div>
+            <div>Spokane, WA 99217</div>
+          </div>
+        </ContactSubTitles>
+      </ContactCard>
     </Div>
   );
 }

@@ -1,19 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import homeImage from './assets/images/homeimage.png'
+import homeImage from './assets/images/splash.jpg'
 import styled from 'styled-components';
+import { slowZoom } from './slowZoom';
+import { bounce } from './bounce';
 
 const Container = styled.div`{
   min-height: 100vh;
   overflow: hidden;
 }`;
 
-const Img = styled.img`{
+const Img = styled.div`{
+  animation: ${slowZoom} 30s ease-out 0s;
+  background-image: url(${homeImage});
+  background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .7;
   min-width: 100%;
   min-height: 100%;
   position: absolute;
   top: 0px;
-  z-index: -1;
+  animation-fill-mode: forwards;
+}`;
+
+const ImgContainer = styled.div`{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }`;
 
 const Div = styled.div`{
@@ -42,6 +61,11 @@ const ButtonTwo = styled(Link)`{
   justify-content: center;
   align-items: center;
   border-radius: 2px;
+  transition: all 300ms ease-in-out;
+&:hover {
+  background: whitesmoke;
+  color: black;
+}
 }`;
 
 const ButtonOne = styled(Link)`{
@@ -54,6 +78,10 @@ const ButtonOne = styled(Link)`{
   justify-content: center;
   align-items: center;
   border-radius: 2px;
+  transition: opacity 300ms ease-in-out;
+&:hover {
+  opacity: .7;
+}
 }`;
 
 const Headline = styled.div`{
@@ -69,7 +97,7 @@ const Italic = styled.span`{
 }`;
 
 const Arrow = styled.svg`{
-  transform: scale(.4);
+  animation: ${bounce} 2s ease-in-out 0s infinite;
   position: absolute;
   bottom: 10vh;
 }`;
@@ -78,11 +106,12 @@ const Arrow = styled.svg`{
 function Splash() {
   return (
     <Container>
-      <Img src={homeImage} />
+      <ImgContainer>
+        <Img />
+      </ImgContainer>
       <Div>
-        <Headline>McHaney is the <Italic>Cost-Effective</Italic> solution for </Headline>
-        <Headline>OSHA compliant Medical Evaluations &</Headline>
-        <Headline>Online Safety Training Content</Headline>
+        <Headline>Experts in the Field of Industrial Safety</Headline>
+        <Headline>Our Focus is <Italic>Excellence</Italic></Headline>
         <ButtonDiv>
           <ButtonOne to="/whyus">Why Us?</ButtonOne>
           <ButtonTwo to="/clients">Clients</ButtonTwo>

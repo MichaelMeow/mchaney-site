@@ -46,8 +46,14 @@ const A = styled.a`{
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  box-shadow: 4px 4px 10px 1px black;
+  border: solid #8da2a5 3px;
+  box-shadow: 4px 4px 10px 1px grey;
   margin: 40px;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background: white;
+    color: #8da2a5;
+  }
 }`;
 
 
@@ -79,7 +85,7 @@ function CurVit() {
             <Year>1998-Present</Year>
             <Job>
               <div style={{fontStyle:'italic'}}>
-              President, McHaney & Associates, Inc., Canton, GA</div>
+              President, McHaney & Associates, Inc., Spokane, WA</div>
               Safety, health and loss prevention consulting for clients throughout North America,
               with the emphasis on working with clients to increase the value of the Health and
               Safety Program within the overall structure of the company. Although McHaney &
@@ -170,12 +176,12 @@ function CurVit() {
           </p>
           <p>
             “Safety Solution: Conveyor Spillage Prevention”, (Ron McHaney), NIOSH, 2002
-            <UnderLine>http://www.cdc.gov/niosh/mining/topics/machinesafety/equipmentdsgn/conveyorspillage.htm</UnderLine>
+            <UnderLine> http://www.cdc.gov/niosh/mining/topics/machinesafety/equipmentdsgn/conveyorspillage.htm</UnderLine>
           </p>
           <p>
             “Safety Solution: Preventing Slide-Backs on Slope Conveyors”, (Ron McHaney),
             NIOSH, 2002
-            <UnderLine>http://www.cdc.gov/niosh/mining/topics/machinesafety/equipmentdsgn/slidebacks.htm</UnderLine>
+            <UnderLine> http://www.cdc.gov/niosh/mining/topics/machinesafety/equipmentdsgn/slidebacks.htm</UnderLine>
           </p>
           <p>
             “The Advantage of Training for Value”, (Ron McHaney), <UnderLine>Aggregates Manager</UnderLine>,
@@ -192,8 +198,8 @@ function CurVit() {
           <p>
             <UnderLine>Patty’s Industrial Hygiene, Sixth Edition, Volume 4, Part VIII; Specialty Areas of
             Practice, Chapter 47; Emergency and Disaster: Preparedness, Response and
-            Recovery</UnderLine>,2011, (Ron McHaney), Section 1.4 “Planned and Unplanned Events”;
-            Section 7.1“Natural Threats”; Section 7.5 “Civil Unrest, Workplace Violence &
+            Recovery</UnderLine>, 2011, (Ron McHaney), Section 1.4 “Planned and Unplanned Events”;
+            Section 7.1 “Natural Threats”; Section 7.5 “Civil Unrest, Workplace Violence &
             Strikes”.
           </p>
           <h4>PAPER PRESENTATIONS</h4>
@@ -229,13 +235,13 @@ function CurVit() {
             <li>ANSI Z117.1 Committee – Safety Requirements for Confined Spaces</li>
           </ul>
           <ButtonDiv >
-            <A href="/assets/images/mchaneycv.pdf" download>
+            <A href="/files/mchaneycv.pdf" target="_blank" download>
               Download PDF
             </A>
           </ButtonDiv>
       </div>
       <div>
-        <Img src={ronPhoto} />
+        <Img src={ronPhoto} alt='Ron Mchaney Certified Safety Professional profile with experience in primary metals, fabricated metals, mining, industrial chemicals, refractory, automobile assembly, shipbuilding as well as retail and warehouse operations'/>
       </div>
     </Container>
   );

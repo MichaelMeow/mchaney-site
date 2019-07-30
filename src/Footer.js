@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import mlogo from './assets/images/mlogo.png';
+import { SubHeadline } from './styles.js';
 
 const Div1 = styled.div`{
-  width: 600px;
+  width: 900px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,11 +25,16 @@ const Container = styled.div`{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }`
 const Img = styled.img`{
   transform: scale(.4);
 }`
-
+const FinePrint = styled.div`{
+  font-size: .6rem;
+  width: 400px;
+  text-align: center;
+}`;
 
 function Footer() {
   return (
@@ -38,10 +44,8 @@ function Footer() {
          <Img src={mlogo} />
         </div>
         <div>
-        PRIVACY
-        </div>
-        <div>
-        TERMS
+        <SubHeadline style={{marginBottom:'5px', marginTop:'5px'}}>Confidentiality Agreement</SubHeadline>
+        <FinePrint>McHaney & Associates, Inc., agrees not to release or otherwise divulge any information supplied herein, and that all information given shall be held confidential.</FinePrint>
         </div>
         <div>
         © 2019 | ALL RIGHTS RESERVED

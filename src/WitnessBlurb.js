@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Title, SubHeadline, SubTitles, Paragraphs, SubTitle, Paragraph, FlexColumn, ButtonOne, Title2 } from './styles.js';
+import { Text, Title, SubHeadline, ButtonOne } from './styles.js';
 
 const Div = styled.div`{
-  background-color: smoke;
+  background-color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #063253;
 }`;
 const Flex = styled.div`{
@@ -18,14 +19,18 @@ const ButtonDiv = styled.div`{
   display: flex;
   justify-content: center;
 }`;
-
+export const H3 = styled.h3`{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  width: 400px;
+}`;
 
 function WitnessBlurb() {
   return (
     <Div>
       <Text>
         <Title>Expert Witness</Title>
-        <Title2>Litigation Support for OSHA and MSHA Health and Safety Issues</Title2>
+        <H3>Litigation Support for OSHA and MSHA Health and Safety Issues</H3>
         <Flex>
           <div>
             <SubHeadline>Ron McHaney is a Certified Safety Professional with more than 50 years of occupational health and safety experience including expert witness assignments since 1998.</SubHeadline>

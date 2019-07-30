@@ -8,15 +8,17 @@ export const Text = styled.div`{
 export const Title = styled.h2`{
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
+  margin-bottom: 10px;
 }`;
 
 export const Title2 = styled.h3`{
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
+  margin-bottom: 10px;
 }`;
 
 export const SubHeadline = styled.div`{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 400px;
 }`;
 export const SubTitles = styled.div`{
@@ -54,8 +56,14 @@ export const ButtonOne = styled(Link)`{
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid #8da2a5 3px;
   border-radius: 2px;
-  box-shadow: 4px 4px 10px 1px black;
+  box-shadow: 4px 4px 10px 1px grey;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background: whitesmoke;
+    color: #8da2a5;
+  }
 }`;
 export const ButtonOneExternal = styled.a`{
   text-decoration: none;
@@ -68,7 +76,13 @@ export const ButtonOneExternal = styled.a`{
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  box-shadow: 4px 4px 10px 1px black;
+  border: solid #8da2a5 3px;
+  box-shadow: 4px 4px 10px 1px grey;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background: whitesmoke;
+    color: #8da2a5;
+  }
 }`;
 export const ButtonTwo = styled(Link)`{
   margin-bottom: 100px;
@@ -82,10 +96,16 @@ export const ButtonTwo = styled(Link)`{
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  box-shadow: 4px 4px 10px 1px black;
+  box-shadow: 4px 4px 10px 1px grey;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background: whitesmoke;
+    color: black;
+  }
 }`;
 
 export const Page = styled.div`{
   min-width: 700px;
   max-width: 70vw;
+  background-color: white;
 }`;

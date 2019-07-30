@@ -28,10 +28,14 @@ function WhyUs() {
             <Fix>
               <FlexColumn>
                 <SubTitle>Training</SubTitle>
-                <Paragraph>Developing customized training content utilizing adult learning techniques.
-                Completed projects include:
-                Training content for 9 separate OSHA Susan Harwood Training Grants
-                Training content for a SHIP Grant. (Safety & Health Investment Project Grant Program, Washington state Department of Labor & Industries) </Paragraph>
+                <Paragraph>We develop customized training content utilizing adult learning techniques.</Paragraph>
+                <Paragraph>Completed projects include:
+                  <ul>
+                    <li>Training content for 9 separate OSHA Susan Harwood Training Grants</li>
+                    <li>Training content for a SHIP Grant. (Safety &amp; Health Investment Project Grant Program,
+Washington State Department of Labor &amp; Industries)</li>
+                  </ul>
+                </Paragraph>
               </FlexColumn>
             </Fix>
             <Fix>

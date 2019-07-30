@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Title, SubHeadline, SubTitles, Paragraphs, SubTitle, Paragraph, FlexColumn, Title2, Page } from './styles.js';
+import { Text, Title, Title2, Page } from './styles.js';
 
 const Div = styled.div`{
-  background-color: smoke;
+  background-color: white;
   display: flex;
   align-items: center;
   color: #063253;
@@ -18,7 +18,7 @@ function Witness() {
         <Text>
         <Title>Expert Witness</Title>
         <Title2>Litigation Support for OSHA and MSHA Health and Safety Issues</Title2>
-        Ron McHaney is a Certified Safety Professional with more than 40 years of occupational health and safety experience including expert witness assignments since 1998.
+        Ron McHaney is a Certified Safety Professional with more than 50 years of occupational health and safety experience including expert witness assignments since 1998.
           <ul>
             <li>
             Mr. McHaney is knowledgeable in both OSHA and MSHA health and safety regulations and has served as an expert witness for both OSHA and MSHA cases.
@@ -27,7 +27,7 @@ function Witness() {
             Mr. McHaney is known for his depth of research and skilled presentation of facts and expert witness opinions relative to OSHA and MSHA regulations.
             </li>
             <li>
-            He has given expert witness depositions for OSHA and MSHA cases and has testified in state and federal court settings, as well as, the Occupational Safety and Health Review Commission.
+            He has given expert witness depositions for OSHA and MSHA cases and has testified in state and federal court settings, as well as for the Occupational Safety and Health Review Commission.
             </li>
             <li>
             Mr. McHaney accepts expert witness assignments for the plaintiff as well as the defense. He is available for consultation regarding the merits of an OSHA or MSHA case or litigation support for OSHA and MSHA issues.
